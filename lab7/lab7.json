@@ -1,0 +1,74 @@
+[
+      {
+        "make": "Tata",
+        "model": "Nano",
+        "year": 2012,
+        "color": "Yellow",
+        "vin": "MA1TANO01CD456789"
+      },
+      {
+        "make": "Maruti Suzuki",
+        "model": "Alto",
+        "year": 2013,
+        "color": "White",
+        "vin": "MA1MALT01CD010101"
+      },
+      {
+        "make": "Mahindra",
+        "model": "Bolero",
+        "year": 2014,
+        "color": "Black",
+        "vin": "MA1MBOL01CD678901"
+      },
+      {
+        "make": "Hyundai",
+        "model": "i10",
+        "year": 2015,
+        "color": "Red",
+        "vin": "MA1HI10X01CD234567"
+      },
+      {
+        "make": "Honda",
+        "model": "City",
+        "year": 2016,
+        "color": "Silver",
+        "vin": "MA1HCITY01CD890123"
+      },
+      {
+        "make": "Ford",
+        "model": "EcoSport",
+        "year": 2017,
+        "color": "Gray",
+        "vin": "MA1FECOS01CD345678"
+      },
+      {
+        "make": "Tata",
+        "model": "Hexa",
+        "year": 2018,
+        "color": "Blue",
+        "vin": "MA1THEXA01CD901234"
+      },
+      {
+        "make": "Maruti Suzuki",
+        "model": "Dzire",
+        "year": 2019,
+        "color": "Green",
+        "vin": "MA1MDZIR01CD567890"
+      },
+      {
+        "make": "Mahindra",
+        "model": "Thar",
+        "year": 2020,
+        "color": "Orange",
+        "vin": "MA1MTHAR01CD123456"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Creta",
+        "year": 2021,
+        "color": "Purple",
+        "vin": "MA1HCRET01CD789012"
+      }
+  ]
+  
+  

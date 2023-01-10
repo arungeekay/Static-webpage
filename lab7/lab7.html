@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>    
+ <html>    
+ <head>    
+   <title>Vehicle Details</title>    
+   <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=DynaPuff' rel='stylesheet'>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>    
+   <script type="text/javascript" src="news.js"></script>    
+ </head> 
+ <style>
+  table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+th{
+  background-color: black;
+  color: aliceblue;
+}
+
+ </style>   
+ <body ng-app="employeeApp">    
+    <br/>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a model.." title="Type in a name">
+    <br/>
+   <div align="center"><h2 style="font-family: 'DynaPuff';font-size: 35px;color: #330033;">VEHICLE INFORMATION</h2></div>    
+   <div ng-controller="employeeCtrl">    
+     <table id="myTable" align="center" border="1" style="font-family: 'Akaya Kanadaka';">  
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>VIN</th>
+            <th>Year</th>
+            <th>Color</th>
+          </tr>    
+          <tr ng-repeat="vehicle in employees|orderBy:'year'">    
+            <td>{{vehicle.make}}</td>    
+            <td>{{vehicle.model|uppercase}}</td>    
+            <td>{{vehicle.vin|uppercase}}</td>   
+            <td>{{vehicle.year}}</td>   
+            <td>{{vehicle.color}}</td>      
+          </tr>    
+     </table>    
+   </div>    
+ </body>    
+ </html>    
+
+ 
+ <script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
